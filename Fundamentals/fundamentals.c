@@ -6,7 +6,7 @@
 
 void fundamentals(void)
 {
-  // V1
+  /* Version 1 */
   printf("*** Start of Indexing Strings Demo ***\n");
   char buffer1[BUFFER_SIZE];
   char numInput[NUM_INPUT_SIZE];
@@ -42,4 +42,8 @@ void fundamentals(void)
 
   // End execution of the program after user types 'q' string
   printf("*** End of Indexing String Demo ***\n\n");
+
+  /* Version 2 */
+
+  /* Version 3 */
 }
