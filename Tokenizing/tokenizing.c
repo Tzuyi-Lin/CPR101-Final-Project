@@ -30,29 +30,30 @@ void tokenizing()
   printf("*** End of rokenizing Words Demo ***\n\n"); // message indicating the end of the module
 }
 
-  /* Version 2 */
-  // V2
-void tokenizingPhrases(void) {
-    printf("*** Start of Tokenizing Phrases Demo ***\n");// Print a message indicating the start of the tokenizing phrases demo  
-    char phrases[BUFFER_SIZE]; // Declare an array to hold the input phrases from the user  
-    char* nextPhrase = NULL; // Initialize a pointer for the next token/phrase to be extracted  
-    int phrasesCounter; // Declare a counter for tracking the number of phrases processed  
-    do { 
-        printf("Type a few phrases separated by comma(q - to quit):\n"); // Prompt the user to enter phrases separated by commas; provide an option to quit by entering 'q' 
-        fgets(phrases, BUFFER_SIZE, stdin); // Read a line of input into the phrases buffer, ensuring it does not exceed BUFFER_SIZE  
-        phrases[strlen(phrases) - 1] = '\0'; // Replace the newline character at the end of the input with a null terminator  
-        if ((strcmp(phrases, "q") != 0)) {  // Check if the input string is not equal to "q" (the quit command)  
-            nextPhrase = strtok(phrases, ","); // Tokenize the input string using strtok, starting with the first token  
-            phrasesCounter = 1; // Initialize the counter for the phrases to 1  
-            while (nextPhrase) { // Loop through all phrases returned by strtok until there are no more tokens 
-                printf("Phrase #%d is '%s'\n", phrasesCounter++, nextPhrase); // Print the current phrase along with its corresponding counter
-                nextPhrase = strtok(NULL, ","); // Get the next token (phrase) from the input string
-            }
-        }
-    } while (strcmp(phrases, "q") != 0); // Continue looping until the input is "q"
-    printf("*** End of Tokenizing Phrases Demo ***\n"); // Print a message indicating the end of the tokenizing phrases demo
+/* Version 2 */
+void tokenizingPhrases(void)
+{
+  printf("*** Start of Tokenizing Phrases Demo ***\n"); // Print a message indicating the start of the tokenizing phrases demo
+  char phrases[BUFFER_SIZE];                            // Declare an array to hold the input phrases from the user
+  char *nextPhrase = NULL;                              // Initialize a pointer for the next token/phrase to be extracted
+  int phrasesCounter;                                   // Declare a counter for tracking the number of phrases processed
+  do
+  {
+    printf("Type a few phrases separated by comma(q - to quit):\n"); // Prompt the user to enter phrases separated by commas; provide an option to quit by entering 'q'
+    fgets(phrases, BUFFER_SIZE, stdin);                              // Read a line of input into the phrases buffer, ensuring it does not exceed BUFFER_SIZE
+    phrases[strlen(phrases) - 1] = '\0';                             // Replace the newline character at the end of the input with a null terminator
+    if ((strcmp(phrases, "q") != 0))
+    {                                    // Check if the input string is not equal to "q" (the quit command)
+      nextPhrase = strtok(phrases, ","); // Tokenize the input string using strtok, starting with the first token
+      phrasesCounter = 1;                // Initialize the counter for the phrases to 1
+      while (nextPhrase)
+      {                                                               // Loop through all phrases returned by strtok until there are no more tokens
+        printf("Phrase #%d is '%s'\n", phrasesCounter++, nextPhrase); // Print the current phrase along with its corresponding counter
+        nextPhrase = strtok(NULL, ",");                               // Get the next token (phrase) from the input string
+      }
+    }
+  } while (strcmp(phrases, "q") != 0); // Continue looping until the input is "q"
+  printf("*** End of Tokenizing Phrases Demo ***\n"); // Print a message indicating the end of the tokenizing phrases demo
 }
 
-
-
-  /* Version 3 */
+/* Version 3 */
