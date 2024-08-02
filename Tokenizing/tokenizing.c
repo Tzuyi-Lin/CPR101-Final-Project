@@ -28,6 +28,7 @@ void tokenizing()
     }
   } while (strcmp(words, "q") != 0); // condition to make the loop working, that means until the input be "q"
   printf("*** End of rokenizing Words Demo ***\n\n"); // message indicating the end of the module
+}
 
   /* Version 2 */
   // V2
@@ -55,4 +56,3 @@ void tokenizingPhrases(void) {
 
 
   /* Version 3 */
-}
