@@ -30,7 +30,7 @@ void tokenizing()
   printf("*** End of rokenizing Words Demo ***\n\n"); // message indicating the end of the module
 
   /* Version 2 */
-   // V2
+  // V2
 void tokenizingPhrases(void) {
     printf("*** Start of Tokenizing Phrases Demo ***\n");// Print a message indicating the start of the tokenizing phrases demo  
     char phrases[BUFFER_SIZE]; // Declare an array to hold the input phrases from the user  
