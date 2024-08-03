@@ -28,11 +28,8 @@ void tokenizing()
     }
   } while (strcmp(words, "q") != 0); // condition to make the loop working, that means until the input be "q"
   printf("*** End of rokenizing Words Demo ***\n\n"); // message indicating the end of the module
-}
 
-/* Version 2 */
-void tokenizingPhrases(void)
-{
+  /* Version 2 */
   printf("*** Start of Tokenizing Phrases Demo ***\n"); // Print a message indicating the start of the tokenizing phrases demo
   char phrases[BUFFER_SIZE];                            // Declare an array to hold the input phrases from the user
   char *nextPhrase = NULL;                              // Initialize a pointer for the next token/phrase to be extracted
@@ -54,6 +51,6 @@ void tokenizingPhrases(void)
     }
   } while (strcmp(phrases, "q") != 0); // Continue looping until the input is "q"
   printf("*** End of Tokenizing Phrases Demo ***\n"); // Print a message indicating the end of the tokenizing phrases demo
-}
 
-/* Version 3 */
+  /* Version 3 */
+}
