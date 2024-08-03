@@ -44,6 +44,17 @@ void fundamentals(void)
   printf("*** End of Indexing String Demo ***\n\n");
 
   /* Version 2 */
+  printf("*** Start of Measuring Strings Demo ***\n");
+  char buffer2[80];
+  printf("Type a string (q - to quit):\n");
+  gets(buffer2);
+  while (strcmp(buffer2, "q") != 0)
+  {
+    printf("The length is %lu\n", strlen(buffer2));
+    printf("Type a string (q - to quit):\n");
+    gets(buffer2);
+  }
+  printf("*** End of Measuring Strings Demo ***\n\n"); // Statement printed if q is entered.
 
   /* Version 3 */
 }
