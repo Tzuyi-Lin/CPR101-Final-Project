@@ -12,7 +12,6 @@ void fundamentals(void)
   char numInput[NUM_INPUT_SIZE];
   size_t position;
 
-  // Exit the program with 'q' string
   do
   {
     printf("Type not empty string (q - to quit):\n");
@@ -27,11 +26,8 @@ void fundamentals(void)
       numInput[strlen(numInput) - 1] = '\0';
       position = atoi(numInput);
 
-      // Validate if typed position match the maximum lenght of the the typed string
       if (position >= strlen(buffer1))
       {
-        // Asign the typed position to the length of buffer1 - 1, which is the length of the
-        // typed string by the user
         position = strlen(buffer1) - 1;
         printf("Too big... Position reduced to max. available\n");
       }
@@ -40,11 +36,10 @@ void fundamentals(void)
     }
   } while (strcmp(buffer1, "q") != 0);
 
-  // End execution of the program after user types 'q' string
   printf("*** End of Indexing String Demo ***\n\n");
 
   /* Version 2 */
-  printf("*** Start of Measuring Strings Demo ***(n");
+  printf("*** Start of Measuring Strings Demo ***\n");
   char buffer2[BUFFER_SIZE];
   do
   {
@@ -54,7 +49,7 @@ void fundamentals(void)
     if (strcmp(buffer2, "q") != 0)
       printf("The length of \'%s\' is %d characters\n", buffer2, (int)strlen(buffer2));
   } while (strcmp(buffer2, "q") != 0);
-  printf("*** End of Measuring strings Demo ***(n)n");
+  printf("*** End of Measuring strings Demo ***\n\n");
 
   /* Version 3 */
 }
