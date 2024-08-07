@@ -52,4 +52,20 @@ void fundamentals(void)
   printf("*** End of Measuring strings Demo ***\n\n");
 
   /* Version 3 */
+  printf("*** start of Copying strings Demo ***\n");
+  char destination[BUFFER_SIZE];
+  char source[BUFFER_SIZE];
+  do
+  {
+    destination[0] = '\0';
+    printf("Destination string is reset to empty\n");
+    printf("Type the source string (q - to quit):\n");
+    fgets(source, BUFFER_SIZE, stdin);
+    source[strlen(source) - 1] = '\0';
+    if (strcmp(source, "q") != 0) {
+      strcpy(destination, source);
+      printf("New destination string is \'%s\'\n", destination);
+    }
+  } while (strcmp(source, "q") != 0);
+  printf("*** End of Copying strings Demo ***\n\n");
 }
