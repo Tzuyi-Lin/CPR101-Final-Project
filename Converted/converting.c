@@ -4,27 +4,27 @@
 void converting() {
 /* Version 1 */
 // >> insert here
-    // printf("*** Start of Converting Strings to int Demo ***\n");
+    printf("*** Start of Converting Strings to int Demo ***\n");
 
-    // char intString[BUFFER_SIZE];
-    // int intNumber;
+    char intString[BUFFER_SIZE];
+    int intNumber;
 
-    // do
-    // {
-    //     printf("Type an numeric string (q - to quit):\n");
+    do
+    {
+        printf("Type an numeric string (q - to quit):\n");
 
-    //     fgets(intString, BUFFER_SIZE, stdin);
-    //     intString[strlen(intString) - 1] = '\0';
+        fgets(intString, BUFFER_SIZE, stdin);
+        intString[strlen(intString) - 1] = '\0';
 
-    //     if (strcmp(intString, "q") != 0)
-    //     {
-    //         intNumber = atoi(intString);
-    //         printf("Converted number is %d\n", intNumber);
-    //     }
+        if (strcmp(intString, "q") != 0)
+        {
+            intNumber = atoi(intString);
+            printf("Converted number is %d\n", intNumber);
+        }
 
-    // } while (strcmp(intString, "q") != 0);
+    } while (strcmp(intString, "q") != 0);
 
-    // printf("*** End of Converting String to int Demo ***\n\n");
+    printf("*** End of Converting String to int Demo ***\n\n");
 
 
 /* Version 2 */
@@ -53,26 +53,26 @@ void converting() {
 
 /* Version 3 */
 // >> insert here
-    // printf("*** Start of Converting Strings to long Demo ***\n");
+    printf("*** Start of Converting Strings to long Demo ***\n");
 
-    // char longString[BUFFER_SIZE];
-    // int longNumber;
+    char longString[BUFFER_SIZE];
+    long longNumber;
 
-    // do
-    // {
-    //     printf("Type the long numeric string (q - to quit):\n");
+    do
+    {
+        printf("Type the long numeric string (q - to quit):\n");
 
-    //     fgets(longString, BUFFER_SIZE, stdin);
-    //     longString[strlen(longString) - 1] = '\0';
+        fgets(longString, BUFFER_SIZE, stdin);
+        longString[strlen(longString) - 1] = '\0';
 
-    //     if (strcmp(longString, "q") != 0)
-    //     {
-    //         longNumber = atoi(longString);
-    //         printf("Converted number is %f\n", longNumber);
-    //     }
+        if (strcmp(longString, "q") != 0)
+        {
+            longNumber = atol(longString);
+            printf("Converted number is %ld\n", longNumber);
+        }
 
-    // } while (strcmp(longString, "q") != 0);
+    } while (strcmp(longString, "q") != 0);
 
-    // printf("*** End of Converting Strings to long Demo ***\n\n");
+    printf("*** End of Converting Strings to long Demo ***\n\n");
 
 }
